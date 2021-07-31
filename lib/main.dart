@@ -18,7 +18,10 @@ void initialiseFirebase() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     
+=======
+>>>>>>> 2892b94 (Second commit)
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

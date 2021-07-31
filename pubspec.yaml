@@ -38,6 +38,11 @@ dependencies:
   google_sign_in: ^4.1.4
   firebase_core: ^1.1.1
   http: ^0.13.3
+<<<<<<< HEAD
+=======
+  flutter_styled_toast: ^2.0.0
+  cached_network_image: ^3.0.0
+>>>>>>> 2892b94 (Second commit)
 
 
 dev_dependencies:
