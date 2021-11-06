@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/Constants/device_parameters.dart';
-<<<<<<< HEAD
-import 'package:news_app/screens/LiveMatches/live_matches_screen.dart';
-import 'package:news_app/screens/login_screen/login_screen.dart';
-
-=======
 import 'package:news_app/Widgets/show_toast.dart';
 import 'package:news_app/screens/LiveMatches/live_matches_screen.dart';
 import 'package:news_app/screens/login_screen/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'initial_screen.dart';
->>>>>>> 2892b94 (Second commit)
 import 'homepage_layout.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,57 +15,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   bool exitTheApp = false;
-<<<<<<< HEAD
-
-  @override
-  Widget build(BuildContext context) {
-    Device.setDeviceHeightWidth(context);
-    return WillPopScope(
-      onWillPop: () async {
-        confirmExitTheApp(context);
-        return false;
-      },
-      child: HomePageLayout(),
-    );
-  }
-
-  Future confirmExitTheApp(BuildContext context) {
-    return showDialog(
-      context: context,
-      builder: (context) => AlertDialog(
-        title: Text("Exit the application ?"),
-        content: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            TextButton(
-              onPressed: () {
-                setState(() {
-                  exitTheApp = true;
-                });
-              },
-              child: Text(
-                "Yes",
-                style: TextStyle(
-                  color: Colors.red,
-                ),
-              ),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text(
-                "No",
-                style: TextStyle(
-                  color: Colors.black,
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-=======
   bool isLoggedIn = true;
 
   void getPref() async {
@@ -113,6 +56,5 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Device.setDeviceHeightWidth(context);
     return isLoggedIn ? HomePageLayout() : InitialScreen();
->>>>>>> 2892b94 (Second commit)
   }
 }

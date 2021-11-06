@@ -3,12 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:news_app/Constants/getx_passDataConstant.dart';
 import 'package:news_app/GetX/getx_controller.dart';
-<<<<<<< HEAD
-import 'package:news_app/Packages/check_password_strength.dart';
-import 'package:news_app/Services/register.dart';
-import 'package:news_app/Widgets/common_button.dart';
-import 'package:news_app/Widgets/header.dart';
-=======
 import 'package:news_app/GetX/getx_loading_controller.dart';
 import 'package:news_app/Packages/check_password_strength.dart';
 import 'package:news_app/Services/get_users.dart';
@@ -18,7 +12,6 @@ import 'package:news_app/Widgets/common_button.dart';
 import 'package:news_app/Widgets/dialogs.dart';
 import 'package:news_app/Widgets/header.dart';
 import 'package:news_app/Widgets/show_toast.dart';
->>>>>>> 2892b94 (Second commit)
 import 'package:news_app/Widgets/text_field.dart';
 import 'package:news_app/model/registerAUserObj.dart';
 import 'package:news_app/screens/Login_screen/login_screen.dart';
@@ -29,25 +22,14 @@ import 'password_strength.dart';
 
 class RegistrationScreen extends StatelessWidget {
   final lightPurple = Colors.purple[50];
-<<<<<<< HEAD
-
-=======
->>>>>>> 2892b94 (Second commit)
   final _emailCntrlr = new TextEditingController();
   final _usernameCntrlr = new TextEditingController();
   final _passCntrlr = new TextEditingController();
   final _cfPassCntrlr = new TextEditingController();
-<<<<<<< HEAD
-
-  final _textEditingController = new TextEditingController();
-  final _getXC = Get.put(MyGetXController());
-  final password = new PassWord();
-=======
   final _getXC = Get.put(MyGetXController());
   final _getLoadCtrl = Get.put(GetxLoadingController());
   final password = new PassWord();
   final _formKey = GlobalKey<FormState>();
->>>>>>> 2892b94 (Second commit)
 
   void onChangedPassword(String value) {
     if (password.isStrong(value)) {
@@ -59,19 +41,6 @@ class RegistrationScreen extends StatelessWidget {
     }
   }
 
-<<<<<<< HEAD
-  void registerUser() {
-    var userP = new UserParameters(
-      email: _emailCntrlr.text,
-      username: _usernameCntrlr.text,
-      password: _passCntrlr.text,
-    );
-    RegisterAUser.register(userP).then((value) {
-      print("Success");
-    }).catchError((err) {
-      print(err.toString());
-    });
-=======
   void registerUser(BuildContext context) async {
     if (_formKey.currentState.validate()) {
       _formKey.currentState.save();
@@ -117,7 +86,6 @@ class RegistrationScreen extends StatelessWidget {
       );
       _getLoadCtrl.setProgressForButton(false);
     }
->>>>>>> 2892b94 (Second commit)
   }
 
   @override
@@ -149,77 +117,6 @@ class RegistrationScreen extends StatelessWidget {
       onTap: () {
         FocusManager.instance.primaryFocus.unfocus();
       },
-<<<<<<< HEAD
-      child: BlurryContainer(
-        borderRadius: BorderRadius.only(),
-        blur: 2,
-        bgColor: Colors.purple[900],
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 20,
-            horizontal: 35,
-          ),
-          child: OrientationBuilder(
-            builder: (context, orientation) {
-              return Container(
-                child: ListView(
-                  children: [
-                    Container(
-                      height: orientation == Orientation.portrait
-                          ? MediaQuery.of(context).size.height * .8
-                          : MediaQuery.of(context).size.width * .8,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Header(),
-                          Text("Create a Betallweek Account"),
-                          CommonTextField(
-                            hintText: "  Email Address",
-                            textEditingController: _emailCntrlr,
-                          ),
-                          CommonTextField(
-                            hintText: "  Pick a username",
-                            textEditingController: _usernameCntrlr,
-                          ),
-                          CommonTextField(
-                            hintText: "  Password",
-                            onChanged: () {
-                              onChangedPassword(_passCntrlr.text);
-                            },
-                            onFieldSubmitted: () {
-                              GetXPassDataConstant.getxPassData
-                                  .setPassword(_passCntrlr.text);
-                            },
-                            textEditingController: _passCntrlr,
-                          ),
-                          PasswordStrength(),
-                          CommonTextField(
-                            hintText: "  Confirm Password",
-                            textEditingController: _cfPassCntrlr,
-                          ),
-                          CommonButton(title: "Create Account", onPressed: () {
-                            registerUser();
-                          },),
-                          SwitchLoginRegistration(
-                            text: "Already have an account?",
-                            buttonTitle: "Log in instead",
-                            screen: LoginScreen(),
-                          ),
-                          Divider(
-                            color: lightPurple,
-                          ),
-                          Text(
-                            "By creating an account you are agreeing to Fan Duel Terms of USe and Privacy Policy and to be updated about FanDuel Group products, news, and promotions. Users must be 18+ to play Fantasy and 21+ to play Sportsbook",
-                            style: TextStyle(color: lightPurple),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-=======
       child: Form(
         key: _formKey,
         autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -355,7 +252,6 @@ class RegistrationScreen extends StatelessWidget {
                 );
               },
             ),
->>>>>>> 2892b94 (Second commit)
           ),
         ),
       ),

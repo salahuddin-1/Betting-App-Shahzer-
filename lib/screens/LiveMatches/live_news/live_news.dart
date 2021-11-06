@@ -47,16 +47,12 @@ class LiveNews extends StatelessWidget {
               );
             }
 
-<<<<<<< HEAD
-            return CircularProgressIndicator();
-=======
             return Center(
               child: CircularProgressIndicator(
                 color: Colors.purple[900],
                 strokeWidth: 1,
               ),
             );
->>>>>>> 2892b94 (Second commit)
           },
         ),
       ],

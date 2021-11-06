@@ -11,15 +11,9 @@ class Parlay extends StatelessWidget {
     return Center(
       child: Container(
         decoration: BoxDecoration(
-<<<<<<< HEAD
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(10),
-          ),
-=======
           color: Colors.black,
           borderRadius: BorderRadius.circular(10),
         ),
->>>>>>> 2892b94 (Second commit)
         height: 120,
         width: 280,
         child: Column(

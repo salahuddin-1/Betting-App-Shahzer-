@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:blurrycontainer/blurrycontainer.dart';
-<<<<<<< HEAD
-import 'package:news_app/Constants/device_parameters.dart';
-import 'package:news_app/Services/sign_in.dart';
-import 'package:news_app/Widgets/common_button.dart';
-import 'package:news_app/Widgets/header.dart';
-=======
 import 'package:flutter_styled_toast/flutter_styled_toast.dart';
 import 'package:get/get.dart';
 import 'package:news_app/Constants/device_parameters.dart';
@@ -21,15 +15,11 @@ import 'package:news_app/Widgets/common_button.dart';
 import 'package:news_app/Widgets/dialogs.dart';
 import 'package:news_app/Widgets/header.dart';
 import 'package:news_app/Widgets/show_toast.dart';
->>>>>>> 2892b94 (Second commit)
 import 'package:news_app/Widgets/text_field.dart';
 import 'package:news_app/model/user_model.dart';
 import 'package:news_app/screens/Login_screen/switch_login_registration.dart';
 import 'package:news_app/screens/Registration/registration_screen.dart';
-<<<<<<< HEAD
-=======
 import 'package:shared_preferences/shared_preferences.dart';
->>>>>>> 2892b94 (Second commit)
 
 import 'forgetPassword_button.dart';
 
@@ -38,18 +28,6 @@ class BodyOfLogIn extends StatelessWidget {
 
   final _emailCntrlr = new TextEditingController();
   final _passCntrlr = new TextEditingController();
-<<<<<<< HEAD
-
-  void signIn() async {
-    await SignIn.signIN(_emailCntrlr.text).then((doc) {
-      var userModel = UserModel.fromJson(doc);
-
-      if (userModel.email == _emailCntrlr.text &&
-          userModel.password == _passCntrlr.text) {
-        print("signIn");
-      }
-    });
-=======
   final _formKey = new GlobalKey<FormState>();
   final _getLoadCtrl = Get.put(GetxLoadingController());
   static final GlobalKey<FormFieldState<String>> _emailKey =
@@ -66,7 +44,6 @@ class BodyOfLogIn extends StatelessWidget {
       getLoadCtrl: _getLoadCtrl,
       formKey: _formKey,
     ).signIn();
->>>>>>> 2892b94 (Second commit)
   }
 
   @override
@@ -95,55 +72,6 @@ class BodyOfLogIn extends StatelessWidget {
       onTap: () {
         FocusManager.instance.primaryFocus.unfocus();
       },
-<<<<<<< HEAD
-      child: BlurryContainer(
-        borderRadius: BorderRadius.only(),
-        blur: 2,
-        bgColor: Colors.purple[900],
-        child: Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 20,
-            horizontal: 35,
-          ),
-          child: OrientationBuilder(
-            builder: (context, orientation) {
-              return Container(
-                child: ListView(
-                  children: [
-                    Container(
-                      height: orientation == Orientation.portrait
-                          ? Device.height * .8
-                          : Device.width * .8,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Header(),
-                          Text("Log In to Betallweek"),
-                          CommonTextField(hintText: "  Email Address"),
-                          CommonTextField(hintText: "  Password"),
-                          LoginForgetPassword(),
-                          CommonButton(title: "LOGIN", onPressed: () {
-                            signIn();
-                          },),
-                          SwitchLoginRegistration(
-                            text: "Don't have an account?",
-                            buttonTitle: "Sign Up",
-                            screen: RegistrationScreen(),
-                          ),
-                          Divider(color: lightPurple),
-                          Text(
-                            "If you or someone youknow has a problem and wants help, call 8898911744",
-                            style: TextStyle(color: lightPurple),
-                            maxLines: 3,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-=======
       child: Form(
         autovalidateMode: AutovalidateMode.onUserInteraction,
         key: _formKey,
@@ -234,15 +162,12 @@ class BodyOfLogIn extends StatelessWidget {
                 );
               },
             ),
->>>>>>> 2892b94 (Second commit)
           ),
         ),
       ),
     );
   }
 }
-<<<<<<< HEAD
-=======
 
 class SignInActions {
   final GlobalKey<FormState> formKey;
@@ -309,4 +234,3 @@ class SignInActions {
     }
   }
 }
->>>>>>> 2892b94 (Second commit)

@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:news_app/Widgets/text_button.dart';
-
-class LoginForgetPassword extends StatelessWidget {
-=======
 import 'package:get/get.dart';
 import 'package:news_app/GetX/getx_state_management.dart';
 import 'package:news_app/Widgets/text_button.dart';
 
 class LoginForgetPassword extends StatelessWidget {
   final _getXSttCtrl = Get.put(GetXStateManagement());
->>>>>>> 2892b94 (Second commit)
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -19,15 +13,6 @@ class LoginForgetPassword extends StatelessWidget {
         Expanded(
           child: Row(
             children: [
-<<<<<<< HEAD
-              Checkbox(
-                activeColor: Colors.white,
-                checkColor: Colors.black,
-                value: true,
-                onChanged: (val) {
-                  print('Checkbox clicked');
-                },
-=======
               GetBuilder<GetXStateManagement>(
                 init: GetXStateManagement(),
                 builder: (_) => Checkbox(
@@ -38,7 +23,6 @@ class LoginForgetPassword extends StatelessWidget {
                     _getXSttCtrl.setRememberMe(!_getXSttCtrl.rememberMe);
                   },
                 ),
->>>>>>> 2892b94 (Second commit)
               ),
               Text(
                 "Remember me",
