@@ -38,6 +38,7 @@ dependencies:
   google_sign_in: ^4.1.4
   firebase_core: ^1.1.1
   http: ^0.13.3
+  webview_flutter: ^2.3.0
 <<<<<<< HEAD
 =======
   flutter_styled_toast: ^2.0.0
