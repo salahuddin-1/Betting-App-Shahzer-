@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/Constants/device_parameters.dart';
 import 'package:news_app/Widgets/show_toast.dart';
-import 'package:news_app/screens/LiveMatches/live_matches_screen.dart';
-import 'package:news_app/screens/login_screen/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'initial_screen.dart';
