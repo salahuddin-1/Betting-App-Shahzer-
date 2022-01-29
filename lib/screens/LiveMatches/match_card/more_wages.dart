@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
 
 class MoreWagers extends StatelessWidget {
   @override

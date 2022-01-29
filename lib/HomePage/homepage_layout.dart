@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/screens/Different_Sports/bodyOfDifferentSports.dart';
-import 'package:news_app/screens/LiveMatches/live_matches_screen.dart';
-import 'package:news_app/screens/Login_screen/login_screen.dart';
-import 'package:news_app/screens/Place_Bets/place_bets.dart';
+import '../screens/Different_Sports/bodyOfDifferentSports.dart';
+import '../screens/LiveMatches/live_matches_screen.dart';
+import '../screens/PendingBets/pending_bets_screen.dart';
+import '../screens/Place_Bets/place_bets.dart';
+import '../screens/Settings/settings_screen.dart';
 
 class HomePageLayout extends StatefulWidget {
   @override
@@ -43,7 +44,7 @@ class _HomePageLayoutState extends State<HomePageLayout> {
 
   final List<BottomNavigationBarItem> items = [
     Items.item(Icons.home_outlined, "Home"),
-    Items.item(Icons.image_search_outlined, "About Us"),
+    Items.item(Icons.image_search_outlined, "Live news"),
     Items.item(Icons.compare_arrows_rounded, "Betting"),
     Items.item(Icons.wallet_giftcard_outlined, "Wallet"),
     Items.item(Icons.person, "Account"),
@@ -53,8 +54,9 @@ class _HomePageLayoutState extends State<HomePageLayout> {
     BodyOfDifferentSports(),
     LiveMatchesScreen(),
     PlaceBets(),
-    LiveMatchesScreen(),
-    LoginScreen(),
+    PendingBetsScreen(),
+    SetingsScreen(),
+    // LoginScreen(),
   ];
 }
 

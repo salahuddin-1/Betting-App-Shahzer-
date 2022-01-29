@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
+import '../../../Constants/device_parameters.dart';
 
 import 'more_wages.dart';
 import 'sports_name.dart';

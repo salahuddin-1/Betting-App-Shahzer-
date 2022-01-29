@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:news_app/model/article_model.dart';
+import '../model/article_model.dart';
 
 // class ApiService {
 //   final endPointUrl = "newsapi.org";
@@ -34,7 +34,6 @@ import 'package:news_app/model/article_model.dart';
 //     }
 //   }
 // }
-
 
 class ApiService {
   final endPointUrl = "newsapi.org";

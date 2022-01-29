@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:news_app/screens/Registration/password_strength.dart';
+import '../screens/Registration/password_strength.dart';
 
 class MyGetXController extends GetxController {
   StrengthOfPassword _passwordStrength;

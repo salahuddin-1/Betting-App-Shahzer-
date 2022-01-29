@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Navigation/navigation.dart';
-import 'package:news_app/Widgets/text_button.dart';
+import '../../Navigation/navigation.dart';
+import '../../Widgets/text_button.dart';
 
 class SwitchLoginRegistration extends StatelessWidget
     implements NavigationService {

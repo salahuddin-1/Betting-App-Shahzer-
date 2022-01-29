@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:news_app/Constants/getx_passDataConstant.dart';
-import 'package:news_app/GetX/getx_controller.dart';
-import 'package:news_app/Packages/check_password_strength.dart';
-import 'package:news_app/Widgets/text_field.dart';
-import 'package:news_app/screens/Registration/password_strength.dart';
+import '../../Constants/getx_passDataConstant.dart';
+import '../../GetX/getx_controller.dart';
+import '../../Packages/check_password_strength.dart';
+import '../../Widgets/text_field.dart';
+import 'password_strength.dart';
 
 class SetPasswordTextField extends StatelessWidget {
-
   final _textEditingController = new TextEditingController();
   final _getXC = Get.put(MyGetXController());
   final password = new PassWord();
-  
+
   void onChangedPassword(String value) {
     if (password.isStrong(value)) {
       _getXC.setPasswordStrength(StrengthOfPassword.Strong);
@@ -30,7 +29,8 @@ class SetPasswordTextField extends StatelessWidget {
         onChangedPassword(_textEditingController.text);
       },
       onFieldSubmitted: () {
-        GetXPassDataConstant.getxPassData.setPassword(_textEditingController.text);
+        GetXPassDataConstant.getxPassData
+            .setPassword(_textEditingController.text);
       },
       textEditingController: _textEditingController,
     );

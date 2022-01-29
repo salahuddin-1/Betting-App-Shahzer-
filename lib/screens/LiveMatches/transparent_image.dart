@@ -1,7 +1,7 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
-import 'package:news_app/Widgets/header.dart';
+import '../../Constants/device_parameters.dart';
+import '../../Widgets/header.dart';
 
 class TransparentImage extends StatelessWidget {
   final Orientation orientation;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
+import '../../Constants/device_parameters.dart';
 
 import 'body_of_placebets.dart';
 
@@ -11,9 +11,9 @@ class Parlay extends StatelessWidget {
     return Center(
       child: Container(
         decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(10),
-          ),
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(10),
+        ),
         height: 120,
         width: 280,
         child: Column(

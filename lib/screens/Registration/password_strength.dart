@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:news_app/GetX/getx_controller.dart';
+import '../../GetX/getx_controller.dart';
 
 class PasswordStrength extends StatelessWidget {
   final lightPurple = Colors.purple[100];
+  final getCtrl = Get.put(MyGetXController());
+  final _duration = Duration(milliseconds: 300);
+  double get width => getCtrl.passwordStrength == StrengthOfPassword.Strong
+      ? 90
+      : getCtrl.passwordStrength == StrengthOfPassword.Average
+          ? 60
+          : 30;
 
   @override
   Widget build(BuildContext context) {
@@ -19,16 +26,17 @@ class PasswordStrength extends StatelessWidget {
                 child: Stack(
                   children: [
                     Container(
-                      width: 80,
+                      width: 90,
                       height: 10,
                       decoration: BoxDecoration(
                         color: lightPurple,
                         borderRadius: BorderRadius.circular(4),
                       ),
                     ),
-                    Container(
+                    AnimatedContainer(
+                      duration: _duration,
                       height: 10,
-                      width: 20,
+                      width: width,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(4),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
+
+import '../../Constants/device_parameters.dart';
 
 class SportsCardList extends StatelessWidget {
   final List<CardType> items = [

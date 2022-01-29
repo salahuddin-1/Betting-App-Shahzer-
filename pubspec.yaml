@@ -38,11 +38,30 @@ dependencies:
   google_sign_in: ^4.1.4
   firebase_core: ^1.1.1
   http: ^0.13.3
+  webview_flutter: 
+  flutter_styled_toast: ^2.0.0
+  cached_network_image: ^3.0.0
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+  flutter_native_splash: 
+
+flutter_native_splash:
+  color: "#000000"
+  image: "assets/splash.png"
+  android: true
+  ios: true
+   
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpeg"
+
+    
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

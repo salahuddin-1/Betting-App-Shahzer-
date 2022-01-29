@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
-import 'package:news_app/Widgets/header.dart';
 
+import '../../Constants/device_parameters.dart';
+import '../../Widgets/header.dart';
 import 'header.dart';
 import 'sports_tile.dart';
 
 class BodyOfDifferentSports extends StatelessWidget {
   final List<SportsData> items = [
-    SportsData(Icons.sports_soccer, "Soccer"),
     SportsData(Icons.sports_basketball, "Basketball"),
+    SportsData(Icons.sports_soccer, "Football"),
     SportsData(Icons.sports_hockey, "Ice Hockey"),
-    SportsData(Icons.sports_football, "Rugby Union"),
+    SportsData(Icons.sports_baseball, "Baseball"),
     SportsData(Icons.sports_tennis, "Tennis"),
+    SportsData(Icons.sports_football, "Rugby Union"),
   ];
   @override
   Widget build(BuildContext context) {

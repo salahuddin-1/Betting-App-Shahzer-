@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Constants/device_parameters.dart';
-import 'package:news_app/Widgets/header.dart';
-import 'package:news_app/screens/LiveMatches/match_card/match_card.dart';
+import '../../Constants/device_parameters.dart';
+import '../../Widgets/header.dart';
+import 'match_card/match_card.dart';
 
 import 'live_news/live_news.dart';
 import 'sports_card_list.dart';

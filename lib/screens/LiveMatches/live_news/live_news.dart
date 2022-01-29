@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Services/api_service.dart';
-import 'package:news_app/model/article_model.dart';
+import '../../../Services/api_service.dart';
+import '../../../model/article_model.dart';
 
 import 'live_news_body.dart';
 
@@ -47,7 +47,12 @@ class LiveNews extends StatelessWidget {
               );
             }
 
-            return CircularProgressIndicator();
+            return Center(
+              child: CircularProgressIndicator(
+                color: Colors.purple[900],
+                strokeWidth: 1,
+              ),
+            );
           },
         ),
       ],

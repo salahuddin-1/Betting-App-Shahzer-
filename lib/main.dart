@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'AppThemeData/apps_theme.dart';
-import 'Constants/device_parameters.dart';
 import 'HomePage/homepage.dart';
 
 void main() {
@@ -18,10 +17,9 @@ void initialiseFirebase() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'BetAllWeek',
       theme: ThemeData(
         primaryColor: Colors.purple[100],
         inputDecorationTheme: AppsThemeData.textFieldData(),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/Widgets/text_field.dart';
+
+import '../../Widgets/text_field.dart';
 
 class SetConfirmPasswordTextField extends StatelessWidget {
   final _textEditingController = new TextEditingController();

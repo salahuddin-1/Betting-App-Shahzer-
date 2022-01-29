@@ -1,5 +1,5 @@
-import 'package:news_app/Services/database.dart';
-import 'package:news_app/model/registerAUserObj.dart';
+import 'database.dart';
+import '../model/registerAUserObj.dart';
 
 class RegisterAUser {
   static Future<void> register(UserParameters userParameters) {
