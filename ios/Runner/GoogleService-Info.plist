@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>592702636000-ra6t3ircgomu5fb9id8uhmo96242qf1p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.592702636000-ra6t3ircgomu5fb9id8uhmo96242qf1p</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>592702636000-6pjve93l37q0fbr42juon4g9mn16a736.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXb8kwEf07VPDqKphHDSqCs3i587Li6sk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>592702636000</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.shahzer.betallweek</string>
+	<key>PROJECT_ID</key>
+	<string>news-app-d1219</string>
+	<key>STORAGE_BUCKET</key>
+	<string>news-app-d1219.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:592702636000:ios:584a5657cf1d862477f585</string>
+</dict>
+</plist>
